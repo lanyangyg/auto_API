@@ -1,0 +1,6 @@
+[32m2025-09-02 18:42:47,325 - INFO - 请求: POST https://dummyjson.com/user/login[0m
+[32m2025-09-02 18:42:47,325 - INFO - 请求体: {'username': 'emilys', 'password': 'emilyspass'}[0m
+[32m2025-09-02 18:42:48,399 - INFO - 响应: 200 {"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTY[0m
+[32m2025-09-02 18:42:48,402 - INFO - 认证Token已设置[0m
+[32m2025-09-02 18:42:48,404 - INFO - 请求: GET https://dummyjson.com/users/me[0m
+[32m2025-09-02 18:42:50,292 - INFO - 响应: 200 {"id":1,"firstName":"Emily","lastName":"Johnson","maidenName":"Smith","age":28,"gender":"female","email":"emily.johnson@x.dummyjson.com","phone":"+81 965-431-3024","username":"emilys","password":"emilyspass","birthDate":"1996-5-30","image":"https://dummyjson.com/icon/emilys/128","bloodGroup":"O-","h[0m
