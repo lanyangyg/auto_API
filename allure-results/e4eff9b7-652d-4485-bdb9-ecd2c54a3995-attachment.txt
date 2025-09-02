@@ -1,0 +1,4 @@
+[32m2025-09-02 23:40:59,767 - INFO - 请求: POST https://dummyjson.com/user/login[0m
+[32m2025-09-02 23:40:59,767 - INFO - 请求体: {'username': 'anotheruser', 'password': 'anotherpass'}[0m
+[32m2025-09-02 23:41:00,376 - INFO - 响应: 400 {"message":"Invalid credentials"}[0m
+[31m2025-09-02 23:41:00,377 - ERROR - 请求发生异常: 400 Client Error: Bad Request for url: https://dummyjson.com/user/login[0m

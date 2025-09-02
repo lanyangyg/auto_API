@@ -1,0 +1,3 @@
+INFO     api_automation_logger:api_client.py:38 请求: POST https://dummyjson.com/carts/add
+INFO     api_automation_logger:api_client.py:40 请求体: {'userId': 3, 'products': [{'id': 3, 'quantity': 1}]}
+INFO     api_automation_logger:api_client.py:46 响应: 201 {"id":51,"products":[{"id":3,"title":"Powder Canister","price":14.99,"quantity":1,"total":14.99,"discountPercentage":9.84,"discountedPrice":14,"thumbnail":"https://cdn.dummyjson.com/product-images/beauty/powder-canister/thumbnail.webp"}],"total":14.99,"discountedTotal":14,"userId":3,"totalProducts":

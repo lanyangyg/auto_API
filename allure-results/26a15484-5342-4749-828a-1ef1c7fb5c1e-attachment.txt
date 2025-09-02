@@ -1,0 +1,4 @@
+INFO     api_automation_logger:api_client.py:38 请求: POST https://dummyjson.com/user/login
+INFO     api_automation_logger:api_client.py:40 请求体: {'username': 'testuser', 'password': 'testpass'}
+INFO     api_automation_logger:api_client.py:46 响应: 400 {"message":"Invalid credentials"}
+ERROR    api_automation_logger:api_client.py:53 请求发生异常: 400 Client Error: Bad Request for url: https://dummyjson.com/user/login
