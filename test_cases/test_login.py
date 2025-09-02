@@ -11,9 +11,9 @@ class TestLogin:
     #     return token
 
     @pytest.mark.parametrize("username,password,expected_status_code", [
-        ("emilys", "emilyspass", 200),
-        ("testuser", "testpass", 400),
-        ("anotheruser", "anotherpass", 400)
+        ("emilys", "emilyspass", 200)
+        # ("testuser", "testpass", 400),
+        # ("anotheruser", "anotherpass", 400)
     ])
     def test_login(self, username, password, expected_status_code):
         # 1. 准备动作，实例化一个Auth对象

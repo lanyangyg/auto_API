@@ -1,0 +1,2 @@
+[32m2025-09-02 23:53:03,649 - INFO - 请求: GET https://dummyjson.com/products?q=apple[0m
+[32m2025-09-02 23:53:03,934 - INFO - 响应: 200 {"products":[{"id":1,"title":"Essence Mascara Lash Princess","description":"The Essence Mascara Lash Princess is a popular mascara known for its volumizing and lengthening effects. Achieve dramatic lashes with this long-lasting and cruelty-free formula.","category":"beauty","price":9.99,"discountPer[0m

@@ -1,4 +1,0 @@
-[32m2025-09-02 23:41:04,663 - INFO - 请求: PUT https://dummyjson.com/users/1[0m
-[32m2025-09-02 23:41:04,663 - INFO - 请求体: {'firstName': 'test2', 'lastName': 'test_2'}[0m
-[32m2025-09-02 23:41:04,932 - INFO - 响应: 200 {"id":1,"firstName":"test2","lastName":"test_2","maidenName":"Smith","age":28,"gender":"female","email":"emily.johnson@x.dummyjson.com","phone":"+81 965-431-3024","username":"emilys","password":"emilyspass","birthDate":"1996-5-30","image":"https://dummyjson.com/icon/emilys/128","bloodGroup":"O-","he[0m
-[32m2025-09-02 23:41:04,936 - INFO - 认证Token已清除[0m

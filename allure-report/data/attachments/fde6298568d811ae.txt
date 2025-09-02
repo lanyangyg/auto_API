@@ -1,0 +1,6 @@
+INFO     api_automation_logger:api_client.py:38 请求: POST https://dummyjson.com/user/login
+INFO     api_automation_logger:api_client.py:40 请求体: {'username': 'emilys', 'password': 'emilyspass'}
+INFO     api_automation_logger:api_client.py:46 响应: 200 {"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTY
+INFO     api_automation_logger:api_client.py:22 认证Token已设置
+INFO     api_automation_logger:api_client.py:38 请求: GET https://dummyjson.com/carts
+INFO     api_automation_logger:api_client.py:46 响应: 200 {"carts":[{"id":1,"products":[{"id":168,"title":"Charger SXT RWD","price":32999.99,"quantity":3,"total":98999.97,"discountPercentage":13.39,"discountedTotal":85743.87,"thumbnail":"https://cdn.dummyjson.com/products/images/vehicle/Charger%20SXT%20RWD/thumbnail.png"},{"id":78,"title":"Apple MacBook Pr

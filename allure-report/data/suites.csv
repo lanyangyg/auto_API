@@ -1,20 +1,49 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","1257","test_update_user[test1-test_1]","test_cases","Mon Sep 01 13:53:33 CST 2025","passed","Mon Sep 01 13:53:34 CST 2025","TestUser","test_user","",""
-"","1203","test_update_user[test2-test_2]","test_cases","Mon Sep 01 13:53:34 CST 2025","passed","Mon Sep 01 13:53:35 CST 2025","TestUser","test_user","",""
-"","977","test_add_product[python-python description-python category-3000]","test_cases","Mon Sep 01 13:53:28 CST 2025","passed","Mon Sep 01 13:53:29 CST 2025","TestProduct","test_product","",""
-"","1267","test_get_product_by_name[test]","test_cases","Mon Sep 01 13:53:22 CST 2025","passed","Mon Sep 01 13:53:23 CST 2025","TestProduct","test_product","",""
-"","881","test_get_user_by_id[1]","test_cases","Mon Sep 01 13:53:35 CST 2025","passed","Mon Sep 01 13:53:36 CST 2025","TestUser","test_user","",""
-"","981","test_get_current_user","test_cases","Mon Sep 01 13:53:29 CST 2025","passed","Mon Sep 01 13:53:30 CST 2025","TestUser","test_user","",""
-"","1052","test_get_product_by_name[python]","test_cases","Mon Sep 01 13:53:23 CST 2025","passed","Mon Sep 01 13:53:24 CST 2025","TestProduct","test_product","",""
-"","937","test_login[emilys-emilyspass-200]","test_cases","Mon Sep 01 13:53:16 CST 2025","passed","Mon Sep 01 13:53:17 CST 2025","TestLogin","test_login","",""
-"","966","test_get_user_by_id[3]","test_cases","Mon Sep 01 13:53:37 CST 2025","passed","Mon Sep 01 13:53:38 CST 2025","TestUser","test_user","",""
-"","1073","test_add_product[test-test description-test category-2000]","test_cases","Mon Sep 01 13:53:27 CST 2025","passed","Mon Sep 01 13:53:28 CST 2025","TestProduct","test_product","",""
-"","2958","test_add_product[phone-phone description-phone category-1000]","test_cases","Mon Sep 01 13:53:24 CST 2025","passed","Mon Sep 01 13:53:27 CST 2025","TestProduct","test_product","",""
-"","1120","test_add_user[test3-test_3-30]","test_cases","Mon Sep 01 13:53:32 CST 2025","passed","Mon Sep 01 13:53:33 CST 2025","TestUser","test_user","",""
-"","621","test_login[anotheruser-anotherpass-400]","test_cases","Mon Sep 01 13:53:17 CST 2025","passed","Mon Sep 01 13:53:18 CST 2025","TestLogin","test_login","",""
-"","446","test_login[testuser-testpass-400]","test_cases","Mon Sep 01 13:53:17 CST 2025","passed","Mon Sep 01 13:53:17 CST 2025","TestLogin","test_login","",""
-"","1016","test_get_user_by_id[2]","test_cases","Mon Sep 01 13:53:36 CST 2025","passed","Mon Sep 01 13:53:37 CST 2025","TestUser","test_user","",""
-"","1870","test_get_product_by_name[phone]","test_cases","Mon Sep 01 13:53:20 CST 2025","passed","Mon Sep 01 13:53:22 CST 2025","TestProduct","test_product","",""
-"","998","test_add_user[test1-test_1-10]","test_cases","Mon Sep 01 13:53:30 CST 2025","passed","Mon Sep 01 13:53:31 CST 2025","TestUser","test_user","",""
-"","1886","test_get_all_products","test_cases","Mon Sep 01 13:53:18 CST 2025","passed","Mon Sep 01 13:53:20 CST 2025","TestProduct","test_product","",""
-"","998","test_add_user[test2-test_2-20]","test_cases","Mon Sep 01 13:53:31 CST 2025","passed","Mon Sep 01 13:53:32 CST 2025","TestUser","test_user","",""
+"","136","test_get_carts_by_user_id[1]","test_cases","Tue Sep 02 23:52:57 CST 2025","passed","Tue Sep 02 23:52:58 CST 2025","TestCarts","test_carts","",""
+"
+添加购物车
+:param user_id: 用户ID
+:param products: 产品列表，格式为 [{""id"": 1, ""quantity"": 1}, ...]
+:return: API响应
+","297","test_add_cart[2-products0]","test_cases","Tue Sep 02 23:52:58 CST 2025","passed","Tue Sep 02 23:52:58 CST 2025","TestCarts","test_carts","",""
+"","297","test_add_user[test2-test_2-20]","test_cases","Tue Sep 02 23:53:11 CST 2025","passed","Tue Sep 02 23:53:11 CST 2025","TestUser","test_user","",""
+"","147","test_add_product[phone-phone description-phone category-1000]","test_cases","Tue Sep 02 23:53:03 CST 2025","passed","Tue Sep 02 23:53:04 CST 2025","TestProduct","test_product","",""
+"","146","test_get_user_by_id[2]","test_cases","Tue Sep 02 23:53:12 CST 2025","passed","Tue Sep 02 23:53:12 CST 2025","TestUser","test_user","",""
+"","1000","test_delete_product_by_id[3]","test_cases","Tue Sep 02 23:53:08 CST 2025","passed","Tue Sep 02 23:53:09 CST 2025","TestProduct","test_product","",""
+"","287","test_get_product_by_name[apple]","test_cases","Tue Sep 02 23:53:03 CST 2025","passed","Tue Sep 02 23:53:03 CST 2025","TestProduct","test_product","",""
+"","146","test_delete_cart_by_carts_id[3]","test_cases","Tue Sep 02 23:53:00 CST 2025","passed","Tue Sep 02 23:53:01 CST 2025","TestCarts","test_carts","",""
+"","272","test_get_user_by_id[1]","test_cases","Tue Sep 02 23:53:11 CST 2025","passed","Tue Sep 02 23:53:12 CST 2025","TestUser","test_user","",""
+"","661","test_update_cart_by_carts_id[3-3-1]","test_cases","Tue Sep 02 23:52:59 CST 2025","passed","Tue Sep 02 23:53:00 CST 2025","TestCarts","test_carts","",""
+"","145","test_update_cart_by_carts_id[2-2-3]","test_cases","Tue Sep 02 23:52:59 CST 2025","passed","Tue Sep 02 23:52:59 CST 2025","TestCarts","test_carts","",""
+"","180","test_delete_cart_by_carts_id[1]","test_cases","Tue Sep 02 23:53:00 CST 2025","passed","Tue Sep 02 23:53:00 CST 2025","TestCarts","test_carts","",""
+"","437","test_get_carts_by_user_id[2]","test_cases","Tue Sep 02 23:52:58 CST 2025","passed","Tue Sep 02 23:52:58 CST 2025","TestCarts","test_carts","",""
+"","636","test_add_product[test-test description-test category-2000]","test_cases","Tue Sep 02 23:53:04 CST 2025","passed","Tue Sep 02 23:53:04 CST 2025","TestProduct","test_product","",""
+"
+添加购物车
+:param user_id: 用户ID
+:param products: 产品列表，格式为 [{""id"": 1, ""quantity"": 1}, ...]
+:return: API响应
+","147","test_add_cart[3-products1]","test_cases","Tue Sep 02 23:52:59 CST 2025","passed","Tue Sep 02 23:52:59 CST 2025","TestCarts","test_carts","",""
+"","422","test_add_user[test3-test_3-30]","test_cases","Tue Sep 02 23:53:11 CST 2025","passed","Tue Sep 02 23:53:11 CST 2025","TestUser","test_user","",""
+"","1001","test_add_user[test1-test_1-10]","test_cases","Tue Sep 02 23:53:10 CST 2025","passed","Tue Sep 02 23:53:11 CST 2025","TestUser","test_user","",""
+"","139","test_update_user[test2-test_2]","test_cases","Tue Sep 02 23:53:13 CST 2025","passed","Tue Sep 02 23:53:13 CST 2025","TestUser","test_user","",""
+"
+添加购物车
+:param user_id: 用户ID
+:param products: 产品列表，格式为 [{""id"": 1, ""quantity"": 1}, ...]
+:return: API响应
+","331","test_add_cart[4-products2]","test_cases","Tue Sep 02 23:52:59 CST 2025","passed","Tue Sep 02 23:52:59 CST 2025","TestCarts","test_carts","",""
+"","643","test_get_all_products","test_cases","Tue Sep 02 23:53:02 CST 2025","passed","Tue Sep 02 23:53:02 CST 2025","TestProduct","test_product","",""
+"","649","test_update_user[test1-test_1]","test_cases","Tue Sep 02 23:53:12 CST 2025","passed","Tue Sep 02 23:53:13 CST 2025","TestUser","test_user","",""
+"","501","test_get_all_carts","test_cases","Tue Sep 02 23:52:57 CST 2025","passed","Tue Sep 02 23:52:57 CST 2025","TestCarts","test_carts","",""
+"","156","test_get_product_by_name[test]","test_cases","Tue Sep 02 23:53:03 CST 2025","passed","Tue Sep 02 23:53:03 CST 2025","TestProduct","test_product","",""
+"","2849","test_delete_product_by_id[2]","test_cases","Tue Sep 02 23:53:05 CST 2025","passed","Tue Sep 02 23:53:08 CST 2025","TestProduct","test_product","",""
+"","625","test_get_current_user","test_cases","Tue Sep 02 23:53:09 CST 2025","passed","Tue Sep 02 23:53:10 CST 2025","TestUser","test_user","",""
+"","144","test_get_carts_by_user_id[3]","test_cases","Tue Sep 02 23:52:58 CST 2025","passed","Tue Sep 02 23:52:58 CST 2025","TestCarts","test_carts","",""
+"","315","test_delete_product_by_id[1]","test_cases","Tue Sep 02 23:53:05 CST 2025","passed","Tue Sep 02 23:53:05 CST 2025","TestProduct","test_product","",""
+"","808","test_get_product_by_name[phone]","test_cases","Tue Sep 02 23:53:02 CST 2025","passed","Tue Sep 02 23:53:03 CST 2025","TestProduct","test_product","",""
+"","990","test_login[emilys-emilyspass-200]","test_cases","Tue Sep 02 23:53:01 CST 2025","passed","Tue Sep 02 23:53:02 CST 2025","TestLogin","test_login","",""
+"","148","test_update_cart_by_carts_id[1-1-3]","test_cases","Tue Sep 02 23:52:59 CST 2025","passed","Tue Sep 02 23:52:59 CST 2025","TestCarts","test_carts","",""
+"","146","test_delete_cart_by_carts_id[2]","test_cases","Tue Sep 02 23:53:00 CST 2025","passed","Tue Sep 02 23:53:00 CST 2025","TestCarts","test_carts","",""
+"","135","test_get_user_by_id[3]","test_cases","Tue Sep 02 23:53:12 CST 2025","passed","Tue Sep 02 23:53:12 CST 2025","TestUser","test_user","",""
+"","501","test_add_product[python-python description-python category-3000]","test_cases","Tue Sep 02 23:53:04 CST 2025","passed","Tue Sep 02 23:53:05 CST 2025","TestProduct","test_product","",""

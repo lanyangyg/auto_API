@@ -1,3 +1,0 @@
-[32m2025-09-02 23:41:02,490 - INFO - 请求: POST https://dummyjson.com/users/add[0m
-[32m2025-09-02 23:41:02,490 - INFO - 请求体: {'firstName': 'test1', 'lastName': 'test_1', 'age': 10}[0m
-[32m2025-09-02 23:41:02,851 - INFO - 响应: 201 {"id":209,"firstName":"test1","lastName":"test_1","maidenName":"","age":10,"gender":"","email":"","phone":"","username":"","password":"","birthDate":"","image":"","bloodGroup":"","height":null,"weight":null,"eyeColor":"","hair":{"color":"","type":""},"domain":"","ip":"","address":{"address":"","city[0m
