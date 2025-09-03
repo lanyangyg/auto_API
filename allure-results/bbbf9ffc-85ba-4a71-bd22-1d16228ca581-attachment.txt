@@ -1,0 +1,2 @@
+[32m2025-09-03 13:24:32,521 - INFO - 请求: DELETE https://dummyjson.com/products/2[0m
+[32m2025-09-03 13:24:33,304 - INFO - 响应: 200 {"id":2,"title":"Eyeshadow Palette with Mirror","description":"The Eyeshadow Palette with Mirror offers a versatile range of eyeshadow shades for creating stunning eye looks. With a built-in mirror, it's convenient for on-the-go makeup application.","category":"beauty","price":19.99,"discountPercent[0m
