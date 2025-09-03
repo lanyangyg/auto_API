@@ -1,3 +1,0 @@
-[32m2025-09-02 23:53:04,741 - INFO - 请求: POST https://dummyjson.com/products/add[0m
-[32m2025-09-02 23:53:04,742 - INFO - 请求体: {'title': 'python', 'description': 'python description', 'category': 'python category', 'price': 3000}[0m
-[32m2025-09-02 23:53:05,240 - INFO - 响应: 201 {"id":195,"title":"python","price":3000,"description":"python description","category":"python category"}[0m

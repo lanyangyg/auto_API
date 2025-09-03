@@ -1,7 +1,9 @@
 import pytest
 from apis.users_api import User
+import allure
 
 # 重构整个TestUser类
+@allure.feature("---User Module---")
 class TestUser:
 
     @pytest.fixture(scope="class")
@@ -13,12 +15,17 @@ class TestUser:
         # 这个实例（user_api）在整个TestUser类的测试过程中是同一个，不会重复创建。
         return User(api_client)
 
+
+    @pytest.mark.run(order=1)
+    @allure.title("current user")
     def test_get_current_user(self, user_api):
         # 使用user_api实例，调用get_current_user方法
         response = user_api.get_current_user()
         assert response.status_code == 200
 
 
+    @pytest.mark.run(order=2)
+    @allure.title("add user")
     @pytest.mark.parametrize("firstName, lastName, age", [
         ("test1", "test_1", 10),
         ("test2", "test_2", 20),
@@ -28,12 +35,18 @@ class TestUser:
         response = user_api.add_user(firstName, lastName, age)
         assert response.status_code == 201
 
+
+    @pytest.mark.run(order=3)
+    @allure.title("search user")
     @pytest.mark.parametrize("user_id", [1, 2, 3])
     def test_get_user_by_id(self, user_api, user_id):
         response = user_api.get_user_by_id(user_id)
         assert response.status_code == 200
         assert response.json()["id"] == user_id
 
+
+    @pytest.mark.run(order=4)
+    @allure.title("update user")
     @pytest.mark.parametrize("test_firstName, test_flastName", [
         ("test1", "test_1"),
         ("test2", "test_2")

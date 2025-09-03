@@ -1,2 +1,0 @@
-INFO     api_automation_logger:api_client.py:38 请求: DELETE https://dummyjson.com/carts/1
-INFO     api_automation_logger:api_client.py:46 响应: 200 {"id":1,"products":[{"id":168,"title":"Charger SXT RWD","price":32999.99,"quantity":3,"total":98999.97,"discountPercentage":13.39,"discountedTotal":85743.87,"thumbnail":"https://cdn.dummyjson.com/products/images/vehicle/Charger%20SXT%20RWD/thumbnail.png"},{"id":78,"title":"Apple MacBook Pro 14 Inch

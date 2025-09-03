@@ -1,3 +1,0 @@
-[32m2025-09-02 23:53:03,942 - INFO - 请求: POST https://dummyjson.com/products/add[0m
-[32m2025-09-02 23:53:03,943 - INFO - 请求体: {'title': 'phone', 'description': 'phone description', 'category': 'phone category', 'price': 1000}[0m
-[32m2025-09-02 23:53:04,087 - INFO - 响应: 201 {"id":195,"title":"phone","price":1000,"description":"phone description","category":"phone category"}[0m

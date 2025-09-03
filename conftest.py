@@ -47,6 +47,22 @@ def api_client(auth_token):
     client.clear_auth_token()
     print("\n测试会话结束，认证Token已清除")
 
+
+def pytest_collection_modifyitems(config, items):
+    """按类名自定义顺序"""
+    # 定义测试类的执行顺序
+    class_order = {
+        "TestLogin": 0,
+        "TestUser": 1,
+        "TestProduct": 2,
+        "TestCarts": 3
+    }
+    # 按类排序，类内按方法名自然排序
+    items.sort(key=lambda item: (
+        class_order.get(item.cls.__name__, 999) if item.cls else 999,
+        item.name  # 类内按测试方法名排序
+    ))
+
 #
 # @pytest.fixture(scope="session", autouse=True)
 # def get_auth_token():

@@ -1,24 +1,32 @@
+import allure
 import pytest
 from apis.carts_api import Carts
 
 
+@allure.feature("---Carts Module---")
 class TestCarts:
     @pytest.fixture(scope="class")
     def carts_api(self, api_client):
         return Carts(api_client)
 
 
+    @pytest.mark.run(order=1)
+    @allure.title("carts list")
     def test_get_all_carts(self, carts_api):
         response = carts_api.get_all_carts()
         assert response.status_code == 200
 
 
+    @pytest.mark.run(order=2)
+    @allure.title("search carts by user")
     @pytest.mark.parametrize("user_id", [1, 2, 3])
     def test_get_carts_by_user_id(self, carts_api, user_id):
         response = carts_api.get_carts_by_user_id(user_id)
         assert response.status_code == 200
 
 
+    @pytest.mark.run(order=3)
+    @allure.title("add cart")
     @pytest.mark.parametrize("user_id, products", [
         (2, [{"id": 2, "quantity": 3}]),
         (3, [{"id": 3, "quantity": 1}]),
@@ -34,6 +42,9 @@ class TestCarts:
         response = carts_api.add_cart(user_id, products)
         assert response.status_code == 201
 
+
+    @pytest.mark.run(order=4)
+    @allure.title("update cart")
     @pytest.mark.parametrize("carts_id, product_id, quantity", [
         (1, 1, 3),
         (2, 2, 3),
@@ -44,6 +55,8 @@ class TestCarts:
         assert response.status_code == 200
 
 
+    @pytest.mark.run(order=5)
+    @allure.title("delete cart")
     @pytest.mark.parametrize("carts_id", [1, 2, 3])
     def test_delete_cart_by_carts_id(self, carts_api, carts_id):
         response = carts_api.delete_cart_by_carts_id(carts_id)

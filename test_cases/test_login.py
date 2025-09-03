@@ -1,7 +1,8 @@
 from apis.auth_api import Auth
 import pytest
+import allure
 
-
+@allure.feature("---Login Module---")
 class TestLogin:
     # def test_login(self):
     #     client = ApiClient()
@@ -10,6 +11,7 @@ class TestLogin:
     #     token = response.json()["accessToken"]
     #     return token
 
+    @allure.title("login success")
     @pytest.mark.parametrize("username,password,expected_status_code", [
         ("emilys", "emilyspass", 200)
         # ("testuser", "testpass", 400),
