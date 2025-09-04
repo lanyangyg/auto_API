@@ -1,0 +1,8 @@
+[32m2025-09-04 20:36:22,276 - INFO - 请求: GET https://dummyjson.com/users/me[0m
+[32m2025-09-04 20:36:22,775 - INFO - 响应: 200 {"id":1,"firstName":"Emily","lastName":"Johnson","maidenName":"Smith","age":28,"gender":"female","email":"emily.johnson@x.dummyjson.com","phone":"+81 965-431-3024","username":"emilys","password":"emilyspass","birthDate":"1996-5-30","image":"https://dummyjson.com/icon/emilys/128","bloodGroup":"O-","h[0m
+[32m2025-09-04 20:36:22,775 - INFO - 请求: GET https://dummyjson.com/products?q=phone[0m
+[32m2025-09-04 20:36:25,219 - INFO - 响应: 200 {"products":[{"id":1,"title":"Essence Mascara Lash Princess","description":"The Essence Mascara Lash Princess is a popular mascara known for its volumizing and lengthening effects. Achieve dramatic lashes with this long-lasting and cruelty-free formula.","category":"beauty","price":9.99,"discountPer[0m
+[32m2025-09-04 20:36:25,221 - INFO - 请求: POST https://dummyjson.com/carts/add[0m
+[32m2025-09-04 20:36:25,221 - INFO - 请求体: {'userId': 1, 'products': [{'id': 1, 'quantity': 2}]}[0m
+[32m2025-09-04 20:36:26,108 - INFO - 响应: 201 {"id":51,"products":[{"id":1,"title":"Essence Mascara Lash Princess","price":9.99,"quantity":2,"total":19.98,"discountPercentage":10.48,"discountedPrice":18,"thumbnail":"https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/thumbnail.webp"}],"total":19.98,"discountedTotal":18[0m
+[32m2025-09-04 20:36:26,113 - INFO - 认证Token已清除[0m

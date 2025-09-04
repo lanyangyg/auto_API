@@ -1,3 +1,0 @@
-[32m2025-09-03 13:24:33,741 - INFO - 请求: PUT https://dummyjson.com/carts/3[0m
-[32m2025-09-03 13:24:33,742 - INFO - 请求体: {'productId': 3, 'quantity': 1}[0m
-[32m2025-09-03 13:24:34,156 - INFO - 响应: 200 {"id":3,"products":[],"total":0,"discountedTotal":0,"userId":108,"totalProducts":0,"totalQuantity":0}[0m

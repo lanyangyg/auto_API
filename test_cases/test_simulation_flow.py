@@ -1,3 +1,5 @@
+import allure
+
 from events.simulation_flow import Simulation
 import pytest
 
@@ -5,8 +7,11 @@ import pytest
 def simulation_workflow(api_client):
     return Simulation(api_client)
 
+
+@allure.feature("---Simulation Event---")
 class TestSimulation:
 
+    @allure.title("simulation flow")
     @pytest.mark.parametrize("product_name, product_quantity",[
         ("pen", 1),
         ("phone", 2)])

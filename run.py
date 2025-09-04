@@ -3,14 +3,18 @@ import subprocess
 import sys
 from pathlib import Path
 
+# 获取项目根目录
+PROJECT_ROOT = Path(__file__).parent.absolute()
 
 def ensure_directories():
     """确保必要的目录存在"""
-    directories = ["allure-results", "allure-report"]
+    directories = [
+        PROJECT_ROOT / "allure-results",
+        PROJECT_ROOT / "allure-report"
+    ]
     for directory in directories:
-        Path(directory).mkdir(exist_ok=True)
+        directory.mkdir(exist_ok=True)
         print(f"✓ 确保目录存在: {directory}")
-
 
 def run_tests():
     """运行测试"""
@@ -19,14 +23,13 @@ def run_tests():
         # 构建命令
         cmd = [
             sys.executable, "-m", "pytest",
-            "test_cases",  # 指定测试目录
-            "--alluredir=allure-results",  # 指定allure结果目录
-            "--clean-alluredir",  # 清理旧结果
+            str(PROJECT_ROOT / "test_cases"),  # 使用绝对路径指定测试目录
+            f"--alluredir={PROJECT_ROOT / 'allure-results'}",  # 使用绝对路径指定allure结果目录
             "-v"  # 详细输出
         ]
 
         # 执行命令
-        result = subprocess.run(cmd)
+        result = subprocess.run(cmd, cwd=PROJECT_ROOT)  # 确保在项目根目录运行
 
         if result.returncode == 0:
             print("✅ 测试运行成功")
@@ -37,7 +40,6 @@ def run_tests():
     except Exception as e:
         print(f"❌ 运行测试时出错: {e}")
         return False
-
 
 def generate_allure_report():
     """生成Allure报告"""
@@ -50,12 +52,12 @@ def generate_allure_report():
         # 生成报告
         cmd = [
             "allure", "generate",
-            "allure-results",
+            str(PROJECT_ROOT / "allure-results"),
             "--clean",
-            "-o", "allure-report"
+            "-o", str(PROJECT_ROOT / "allure-report")
         ]
 
-        result = subprocess.run(cmd)
+        result = subprocess.run(cmd, cwd=PROJECT_ROOT)  # 确保在项目根目录运行
 
         if result.returncode == 0:
             print("✅ Allure报告生成成功")
@@ -75,12 +77,11 @@ def generate_allure_report():
         print(f"❌ 生成Allure报告时出错: {e}")
         return False
 
-
 # def open_report():
 #     """打开报告"""
-#     report_path = Path("allure-report") / "index.html"
+#     report_path = PROJECT_ROOT / "allure-report" / "index.html"
 #     if report_path.exists():
-#         print(f"📂 报告路径: {report_path.absolute()}")
+#         print(f"📂 报告路径: {report_path}")
 #         try:
 #             if sys.platform == "darwin":  # macOS
 #                 subprocess.run(["open", str(report_path)])
@@ -91,10 +92,25 @@ def generate_allure_report():
 #             print("🌐 已在浏览器中打开Allure报告")
 #         except Exception as e:
 #             print(f"⚠️  无法自动打开报告: {e}")
-#             print(f"💡 请手动打开: {report_path.absolute()}")
+#             print(f"💡 请手动打开: {report_path}")
 #     else:
 #         print("❌ 报告文件不存在")
 
+def clean_allure_results():
+    """清理Allure结果目录"""
+    allure_results_dir = PROJECT_ROOT / "allure-results"
+    if allure_results_dir.exists():
+        # 删除目录中的所有文件但保留目录本身
+        for file in allure_results_dir.glob("*"):
+            if file.is_file():
+                file.unlink()
+            else:
+                # 如果是目录，递归删除
+                import shutil
+                shutil.rmtree(file)
+        print("✅ 已清理Allure结果目录")
+    else:
+        print("ℹ️  Allure结果目录不存在，无需清理")
 
 def main():
     """主函数"""
@@ -103,6 +119,9 @@ def main():
 
     # 确保目录存在
     ensure_directories()
+
+    # 清理旧的Allure结果
+    clean_allure_results()
 
     # 运行测试
     if not run_tests():
@@ -120,7 +139,6 @@ def main():
     print("=" * 50)
     print("🎉 测试和报告生成完成")
     return 0
-
 
 if __name__ == "__main__":
     sys.exit(main())

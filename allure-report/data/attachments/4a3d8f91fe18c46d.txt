@@ -1,0 +1,2 @@
+[32m2025-09-04 20:36:19,177 - INFO - 请求: GET https://dummyjson.com/carts/user/3[0m
+[32m2025-09-04 20:36:19,632 - INFO - 响应: 200 {"carts":[],"total":0,"skip":0,"limit":0}[0m
