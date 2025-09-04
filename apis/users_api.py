@@ -7,7 +7,7 @@ class User:
     #   "要创建User这个工具箱，你必须给我一个已经准备好的、能发网络请求的工具（api_client），
     #    而且这个工具必须是ApiClient类型的。"
     # 这种做法叫做“依赖注入”，好处是让User类变得非常灵活和易于测试。
-    def __init__(self, api_client: ApiClient):
+    def __init__(self, api_client: ApiClient):      # api_client是参数名，“: ApiClient”是类型注解，表明参数期望的类型
         """
         初始化用户API的工具箱。
         :param api_client: 一个已经配置好、并且通过了认证的ApiClient实例。
