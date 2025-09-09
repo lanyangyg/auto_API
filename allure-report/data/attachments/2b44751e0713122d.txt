@@ -1,0 +1,2 @@
+INFO     api_automation_logger:api_client.py:38 请求: DELETE https://dummyjson.com/carts/3
+INFO     api_automation_logger:api_client.py:46 响应: 200 {"id":3,"products":[{"id":98,"title":"Rolex Submariner Watch","price":13999.99,"quantity":1,"total":13999.99,"discountPercentage":16.35,"discountedTotal":11710.99,"thumbnail":"https://cdn.dummyjson.com/products/images/mens-watches/Rolex%20Submariner%20Watch/thumbnail.png"},{"id":125,"title":"Oppo A5

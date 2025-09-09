@@ -1,3 +1,0 @@
-INFO     api_automation_logger:api_client.py:38 请求: PUT https://dummyjson.com/carts/3
-INFO     api_automation_logger:api_client.py:40 请求体: {'productId': 3, 'quantity': 1}
-INFO     api_automation_logger:api_client.py:46 响应: 200 {"id":3,"products":[],"total":0,"discountedTotal":0,"userId":108,"totalProducts":0,"totalQuantity":0}
