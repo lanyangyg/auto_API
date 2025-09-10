@@ -1,0 +1,3 @@
+INFO     api_automation_logger:api_client.py:38 请求: GET https://dummyjson.com/users?limit=0
+INFO     api_automation_logger:api_client.py:46 响应: 200 {"users":[{"id":1,"firstName":"Emily","lastName":"Johnson","maidenName":"Smith","age":28,"gender":"female","email":"emily.johnson@x.dummyjson.com","phone":"+81 965-431-3024","username":"emilys","password":"emilyspass","birthDate":"1996-5-30","image":"https://dummyjson.com/icon/emilys/128","bloodGrou
+INFO     api_automation_logger:api_client.py:31 认证Token已清除

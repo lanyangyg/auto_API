@@ -4,12 +4,6 @@ import allure
 
 @allure.feature("---Login Module---")
 class TestLogin:
-    # def test_login(self):
-    #     client = ApiClient()
-    #     response = client.post("/user/login", {"username":"emilys", "password":"emilyspass", "expiresInMins":60})
-    #     assert response.status_code == 200
-    #     token = response.json()["accessToken"]
-    #     return token
 
     @allure.title("login success")
     @pytest.mark.parametrize("username,password,expected_status_code", [
@@ -24,9 +18,19 @@ class TestLogin:
         # 2. 调用被测方法，获取响应结果（只把 username 和 password 传给了 login 方法）
         response = login.login(username, password)
 
-        # return response       # 注释掉这行，Auth()中已经返回响应结果了
-
         # 3. 断言（验证结果）
         # 使用第三个参数 expected_status_code, 实际的返回结果进行比较，判断测试是否通过
         assert response.status_code == expected_status_code
+
+    def test_get_all_tokens(self):
+        auth = Auth()
+        tokens = auth.get_all_users_token(max_workers=20)
+
+        # 验证结果
+        assert len(tokens) > 0
+        assert "username" in tokens[0]
+        assert "accessToken" in tokens[0]
+        print(f"成功获取 {len(tokens)} 个token")
+
+
 

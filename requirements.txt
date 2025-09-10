@@ -4,3 +4,4 @@ allure-pytest
 colorlog
 pytest-xdist
 pytest-rerunfailures
+pyyaml
