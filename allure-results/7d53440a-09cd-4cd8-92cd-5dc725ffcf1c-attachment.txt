@@ -1,2 +1,0 @@
-[32m2025-09-10 17:46:17,972 - INFO - 请求: GET https://dummyjson.com/users/1[0m
-[32m2025-09-10 17:46:18,343 - INFO - 响应: 200 {"id":1,"firstName":"Emily","lastName":"Johnson","maidenName":"Smith","age":28,"gender":"female","email":"emily.johnson@x.dummyjson.com","phone":"+81 965-431-3024","username":"emilys","password":"emilyspass","birthDate":"1996-5-30","image":"https://dummyjson.com/icon/emilys/128","bloodGroup":"O-","h[0m

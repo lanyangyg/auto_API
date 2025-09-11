@@ -1,58 +1,58 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","379","search user","test_cases","Wed Sep 10 17:46:18 CST 2025","passed","Wed Sep 10 17:46:18 CST 2025","TestUser","test_user","",""
-"","380","add user","test_cases","Wed Sep 10 17:46:16 CST 2025","passed","Wed Sep 10 17:46:17 CST 2025","TestUser","test_user","",""
-"","379","delete cart","test_cases","Wed Sep 10 17:46:20 CST 2025","passed","Wed Sep 10 17:46:20 CST 2025","TestCarts","test_carts","",""
-"","1498","search product","test_cases","Wed Sep 10 17:46:15 CST 2025","passed","Wed Sep 10 17:46:17 CST 2025","TestProduct","test_product","",""
-"","575","search product","test_cases","Wed Sep 10 17:46:17 CST 2025","passed","Wed Sep 10 17:46:17 CST 2025","TestProduct","test_product","",""
-"","855","carts list","test_cases","Wed Sep 10 17:46:15 CST 2025","passed","Wed Sep 10 17:46:16 CST 2025","TestCarts","test_carts","",""
-"
-添加购物车
-:param user_id: 用户ID
-:param products: 产品列表，格式为 [{""id"": 1, ""quantity"": 1}, ...]
-:return: API响应
-","442","add cart","test_cases","Wed Sep 10 17:46:19 CST 2025","passed","Wed Sep 10 17:46:19 CST 2025","TestCarts","test_carts","",""
-"","442","add product","test_cases","Wed Sep 10 17:46:18 CST 2025","passed","Wed Sep 10 17:46:18 CST 2025","TestProduct","test_product","",""
-"","1586","login success","test_cases","Wed Sep 10 17:46:20 CST 2025","passed","Wed Sep 10 17:46:22 CST 2025","TestLogin","test_login","",""
-"","419","update user","test_cases","Wed Sep 10 17:46:19 CST 2025","passed","Wed Sep 10 17:46:19 CST 2025","TestUser","test_user","",""
-"","2210","simulation flow","test_cases","Wed Sep 10 17:46:22 CST 2025","passed","Wed Sep 10 17:46:24 CST 2025","TestSimulation","test_simulation_flow","",""
-"","963","update cart","test_cases","Wed Sep 10 17:46:19 CST 2025","passed","Wed Sep 10 17:46:20 CST 2025","TestCarts","test_carts","",""
-"","434","add product","test_cases","Wed Sep 10 17:46:18 CST 2025","passed","Wed Sep 10 17:46:19 CST 2025","TestProduct","test_product","",""
-"","439","update cart","test_cases","Wed Sep 10 17:46:19 CST 2025","passed","Wed Sep 10 17:46:20 CST 2025","TestCarts","test_carts","",""
-"","379","search carts by user","test_cases","Wed Sep 10 17:46:17 CST 2025","passed","Wed Sep 10 17:46:18 CST 2025","TestCarts","test_carts","",""
-"","198","products list","test_cases","Wed Sep 10 17:46:18 CST 2025","passed","Wed Sep 10 17:46:18 CST 2025","TestProduct","test_product","",""
-"","444","search carts by user","test_cases","Wed Sep 10 17:46:18 CST 2025","passed","Wed Sep 10 17:46:18 CST 2025","TestCarts","test_carts","",""
-"","1225","current user","test_cases","Wed Sep 10 17:46:16 CST 2025","passed","Wed Sep 10 17:46:18 CST 2025","TestUser","test_user","",""
-"","376","update cart","test_cases","Wed Sep 10 17:46:19 CST 2025","passed","Wed Sep 10 17:46:20 CST 2025","TestCarts","test_carts","",""
-"","15791","test_get_all_tokens","test_cases","Wed Sep 10 17:46:20 CST 2025","passed","Wed Sep 10 17:46:36 CST 2025","TestLogin","test_login","",""
-"","1165","simulation flow","test_cases","Wed Sep 10 17:46:20 CST 2025","passed","Wed Sep 10 17:46:22 CST 2025","TestSimulation","test_simulation_flow","",""
 "
 测试获取所有用户信息
-","1763","test_get_all_users","test_cases","Wed Sep 10 17:46:36 CST 2025","passed","Wed Sep 10 17:46:37 CST 2025","TestAllUsers","test_allUsers","",""
-"","1213","add user","test_cases","Wed Sep 10 17:46:15 CST 2025","passed","Wed Sep 10 17:46:16 CST 2025","TestUser","test_user","",""
-"","443","update user","test_cases","Wed Sep 10 17:46:19 CST 2025","passed","Wed Sep 10 17:46:19 CST 2025","TestUser","test_user","",""
+","1410","test_get_all_users","test_cases","Thu Sep 11 13:44:52 CST 2025","passed","Thu Sep 11 13:44:53 CST 2025","TestAllUsers","test_allUsers","",""
+"","264","search user","test_cases","Thu Sep 11 13:44:49 CST 2025","passed","Thu Sep 11 13:44:49 CST 2025","TestUser","test_user","",""
+"","1145","add user","test_cases","Thu Sep 11 13:44:46 CST 2025","passed","Thu Sep 11 13:44:48 CST 2025","TestUser","test_user","",""
+"","852","update user","test_cases","Thu Sep 11 13:44:50 CST 2025","passed","Thu Sep 11 13:44:51 CST 2025","TestUser","test_user","",""
+"","282","delete product","test_cases","Thu Sep 11 13:44:50 CST 2025","passed","Thu Sep 11 13:44:50 CST 2025","TestProduct","test_product","",""
 "
 添加购物车
 :param user_id: 用户ID
 :param products: 产品列表，格式为 [{""id"": 1, ""quantity"": 1}, ...]
 :return: API响应
-","384","add cart","test_cases","Wed Sep 10 17:46:18 CST 2025","passed","Wed Sep 10 17:46:19 CST 2025","TestCarts","test_carts","",""
-"","433","delete product","test_cases","Wed Sep 10 17:46:19 CST 2025","passed","Wed Sep 10 17:46:19 CST 2025","TestProduct","test_product","",""
-"","360","delete product","test_cases","Wed Sep 10 17:46:19 CST 2025","passed","Wed Sep 10 17:46:19 CST 2025","TestProduct","test_product","",""
-"","642","search user","test_cases","Wed Sep 10 17:46:18 CST 2025","passed","Wed Sep 10 17:46:18 CST 2025","TestUser","test_user","",""
-"","1013","delete cart","test_cases","Wed Sep 10 17:46:20 CST 2025","passed","Wed Sep 10 17:46:21 CST 2025","TestCarts","test_carts","",""
-"
-添加购物车
-:param user_id: 用户ID
-:param products: 产品列表，格式为 [{""id"": 1, ""quantity"": 1}, ...]
-:return: API响应
-","437","add cart","test_cases","Wed Sep 10 17:46:18 CST 2025","passed","Wed Sep 10 17:46:19 CST 2025","TestCarts","test_carts","",""
+","254","add cart","test_cases","Thu Sep 11 13:44:49 CST 2025","passed","Thu Sep 11 13:44:49 CST 2025","TestCarts","test_carts","",""
+"","1410","current user","test_cases","Thu Sep 11 13:44:46 CST 2025","passed","Thu Sep 11 13:44:48 CST 2025","TestUser","test_user","",""
+"","266","add product","test_cases","Thu Sep 11 13:44:49 CST 2025","passed","Thu Sep 11 13:44:49 CST 2025","TestProduct","test_product","",""
+"","268","update user","test_cases","Thu Sep 11 13:44:50 CST 2025","passed","Thu Sep 11 13:44:50 CST 2025","TestUser","test_user","",""
+"","1567","simulation flow","test_cases","Thu Sep 11 13:44:54 CST 2025","passed","Thu Sep 11 13:44:56 CST 2025","TestSimulation","test_simulation_flow","",""
+"","266","add user","test_cases","Thu Sep 11 13:44:47 CST 2025","passed","Thu Sep 11 13:44:47 CST 2025","TestUser","test_user","",""
+"","263","update cart","test_cases","Thu Sep 11 13:44:51 CST 2025","passed","Thu Sep 11 13:44:51 CST 2025","TestCarts","test_carts","",""
+"","267","update cart","test_cases","Thu Sep 11 13:44:51 CST 2025","passed","Thu Sep 11 13:44:51 CST 2025","TestCarts","test_carts","",""
+"","1297","delete cart","test_cases","Thu Sep 11 13:44:51 CST 2025","passed","Thu Sep 11 13:44:52 CST 2025","TestCarts","test_carts","",""
+"","691","add product","test_cases","Thu Sep 11 13:44:49 CST 2025","passed","Thu Sep 11 13:44:50 CST 2025","TestProduct","test_product","",""
+"","256","search user","test_cases","Thu Sep 11 13:44:49 CST 2025","passed","Thu Sep 11 13:44:49 CST 2025","TestUser","test_user","",""
+"","491","search carts by user","test_cases","Thu Sep 11 13:44:48 CST 2025","passed","Thu Sep 11 13:44:48 CST 2025","TestCarts","test_carts","",""
+"","1119","search product","test_cases","Thu Sep 11 13:44:48 CST 2025","passed","Thu Sep 11 13:44:50 CST 2025","TestProduct","test_product","",""
+"","15602","test_get_all_tokens","test_cases","Thu Sep 11 13:44:51 CST 2025","passed","Thu Sep 11 13:45:06 CST 2025","TestLogin","test_login","",""
+"","256","search carts by user","test_cases","Thu Sep 11 13:44:48 CST 2025","passed","Thu Sep 11 13:44:49 CST 2025","TestCarts","test_carts","",""
+"","892","delete product","test_cases","Thu Sep 11 13:44:50 CST 2025","passed","Thu Sep 11 13:44:51 CST 2025","TestProduct","test_product","",""
 "
 测试提取用户凭证并保存到YAML文件
-","1605","test_extract_credentials_to_yaml","test_cases","Wed Sep 10 17:46:21 CST 2025","passed","Wed Sep 10 17:46:22 CST 2025","TestAllUsers","test_allUsers","",""
-"","438","delete product","test_cases","Wed Sep 10 17:46:19 CST 2025","passed","Wed Sep 10 17:46:20 CST 2025","TestProduct","test_product","",""
-"","447","search product","test_cases","Wed Sep 10 17:46:17 CST 2025","passed","Wed Sep 10 17:46:18 CST 2025","TestProduct","test_product","",""
-"","659","delete cart","test_cases","Wed Sep 10 17:46:20 CST 2025","passed","Wed Sep 10 17:46:20 CST 2025","TestCarts","test_carts","",""
-"","372","search user","test_cases","Wed Sep 10 17:46:17 CST 2025","passed","Wed Sep 10 17:46:18 CST 2025","TestUser","test_user","",""
-"","379","add product","test_cases","Wed Sep 10 17:46:18 CST 2025","passed","Wed Sep 10 17:46:18 CST 2025","TestProduct","test_product","",""
-"","1082","add user","test_cases","Wed Sep 10 17:46:16 CST 2025","passed","Wed Sep 10 17:46:17 CST 2025","TestUser","test_user","",""
-"","380","search carts by user","test_cases","Wed Sep 10 17:46:17 CST 2025","passed","Wed Sep 10 17:46:17 CST 2025","TestCarts","test_carts","",""
+","1354","test_extract_credentials_to_yaml","test_cases","Thu Sep 11 13:44:51 CST 2025","passed","Thu Sep 11 13:44:52 CST 2025","TestAllUsers","test_allUsers","",""
+"","1539","simulation flow","test_cases","Thu Sep 11 13:45:06 CST 2025","passed","Thu Sep 11 13:45:08 CST 2025","TestSimulation","test_simulation_flow","",""
+"","1924","search product","test_cases","Thu Sep 11 13:44:46 CST 2025","passed","Thu Sep 11 13:44:48 CST 2025","TestProduct","test_product","",""
+"","269","add user","test_cases","Thu Sep 11 13:44:48 CST 2025","passed","Thu Sep 11 13:44:48 CST 2025","TestUser","test_user","",""
+"","268","search user","test_cases","Thu Sep 11 13:44:48 CST 2025","passed","Thu Sep 11 13:44:49 CST 2025","TestUser","test_user","",""
+"
+添加购物车
+:param user_id: 用户ID
+:param products: 产品列表，格式为 [{""id"": 1, ""quantity"": 1}, ...]
+:return: API响应
+","266","add cart","test_cases","Thu Sep 11 13:44:50 CST 2025","passed","Thu Sep 11 13:44:50 CST 2025","TestCarts","test_carts","",""
+"","1871","search product","test_cases","Thu Sep 11 13:44:47 CST 2025","passed","Thu Sep 11 13:44:49 CST 2025","TestProduct","test_product","",""
+"","496","delete cart","test_cases","Thu Sep 11 13:44:50 CST 2025","passed","Thu Sep 11 13:44:51 CST 2025","TestCarts","test_carts","",""
+"","261","add product","test_cases","Thu Sep 11 13:44:50 CST 2025","passed","Thu Sep 11 13:44:50 CST 2025","TestProduct","test_product","",""
+"
+添加购物车
+:param user_id: 用户ID
+:param products: 产品列表，格式为 [{""id"": 1, ""quantity"": 1}, ...]
+:return: API响应
+","277","add cart","test_cases","Thu Sep 11 13:44:49 CST 2025","passed","Thu Sep 11 13:44:50 CST 2025","TestCarts","test_carts","",""
+"","473","delete product","test_cases","Thu Sep 11 13:44:50 CST 2025","passed","Thu Sep 11 13:44:50 CST 2025","TestProduct","test_product","",""
+"","431","products list","test_cases","Thu Sep 11 13:44:48 CST 2025","passed","Thu Sep 11 13:44:48 CST 2025","TestProduct","test_product","",""
+"","635","carts list","test_cases","Thu Sep 11 13:44:46 CST 2025","passed","Thu Sep 11 13:44:47 CST 2025","TestCarts","test_carts","",""
+"","262","search carts by user","test_cases","Thu Sep 11 13:44:49 CST 2025","passed","Thu Sep 11 13:44:50 CST 2025","TestCarts","test_carts","",""
+"","263","update cart","test_cases","Thu Sep 11 13:44:50 CST 2025","passed","Thu Sep 11 13:44:51 CST 2025","TestCarts","test_carts","",""
+"","3355","login success","test_cases","Thu Sep 11 13:44:51 CST 2025","passed","Thu Sep 11 13:44:54 CST 2025","TestLogin","test_login","",""
+"","266","delete cart","test_cases","Thu Sep 11 13:44:51 CST 2025","passed","Thu Sep 11 13:44:51 CST 2025","TestCarts","test_carts","",""

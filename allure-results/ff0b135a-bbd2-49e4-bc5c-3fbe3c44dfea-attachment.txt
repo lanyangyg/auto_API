@@ -1,0 +1,2 @@
+[32m2025-09-11 13:44:51,219 - INFO - 请求: DELETE https://dummyjson.com/carts/2[0m
+[32m2025-09-11 13:44:52,515 - INFO - 响应: 200 {"id":2,"products":[{"id":144,"title":"Cricket Helmet","price":44.99,"quantity":4,"total":179.96,"discountPercentage":11.47,"discountedTotal":159.32,"thumbnail":"https://cdn.dummyjson.com/products/images/sports-accessories/Cricket%20Helmet/thumbnail.png"},{"id":124,"title":"iPhone X","price":899.99,[0m

@@ -1,7 +1,0 @@
-[32m2025-09-10 17:46:14,812 - INFO - 请求: POST https://dummyjson.com/user/login[0m
-[32m2025-09-10 17:46:14,813 - INFO - 请求体: {'username': 'emilys', 'password': 'emilyspass'}[0m
-[32m2025-09-10 17:46:15,704 - INFO - 响应: 200 {"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTc[0m
-[32m2025-09-10 17:46:15,707 - INFO - 认证Token已设置[0m
-[32m2025-09-10 17:46:15,709 - INFO - 请求: POST https://dummyjson.com/users/add[0m
-[32m2025-09-10 17:46:15,710 - INFO - 请求体: {'firstName': 'test2', 'lastName': 'test_2', 'age': 20}[0m
-[32m2025-09-10 17:46:16,922 - INFO - 响应: 201 {"id":209,"firstName":"test2","lastName":"test_2","maidenName":"","age":20,"gender":"","email":"","phone":"","username":"","password":"","birthDate":"","image":"","bloodGroup":"","height":null,"weight":null,"eyeColor":"","hair":{"color":"","type":""},"domain":"","ip":"","address":{"address":"","city[0m
