@@ -8,10 +8,10 @@ def simulation_workflow(api_client):
     return Simulation(api_client)
 
 
-@allure.feature("---Simulation Event---")
+@allure.feature("Simulation Event")
 class TestSimulation:
 
-    @allure.title("simulation flow")
+    @allure.story("Simulation flow")
     @pytest.mark.parametrize("product_name, product_quantity",[
         ("pen", 1),
         ("phone", 2)])

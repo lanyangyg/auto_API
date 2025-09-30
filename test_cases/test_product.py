@@ -3,7 +3,7 @@ import pytest
 from apis.products_api import Products
 
 # rebuild class TestProduct
-@allure.feature("---Products Module---")
+@allure.feature("Products Module")
 class TestProduct:
 
     @pytest.fixture(scope="class")
@@ -12,7 +12,7 @@ class TestProduct:
         return Products(api_client)
 
     @pytest.mark.run(order=1)
-    @allure.title("products list")
+    @allure.story("Products List")
     def test_get_all_products(self, product_api):
         # product_api --> Products(api_client) --> class Products 中的 self.client = api_client --> self.client.get()
         response = product_api.get_all_products()
@@ -20,7 +20,7 @@ class TestProduct:
 
 
     @pytest.mark.run(order=2)
-    @allure.title("search product")
+    @allure.story("Search Product")
     @pytest.mark.parametrize("product_name",["phone","test","apple"])
     def test_get_product_by_name(self, product_api, product_name):
         response = product_api.get_product_by_name(product_name)
@@ -28,7 +28,7 @@ class TestProduct:
 
 
     @pytest.mark.run(order=3)
-    @allure.title("add product")
+    @allure.story("Add Product")
     @pytest.mark.parametrize("title, description, category, price",
                           [("phone", "phone description", "phone category", 1000),
                            ("test", "test description", "test category", 2000),
@@ -39,7 +39,7 @@ class TestProduct:
 
 
     @pytest.mark.run(order=4)
-    @allure.title("delete product")
+    @allure.story("Delete Product")
     @pytest.mark.parametrize("product_id",[1,2,3])
     def test_delete_product_by_id(self, product_api, product_id):
         response = product_api.delete_product_by_id(product_id)

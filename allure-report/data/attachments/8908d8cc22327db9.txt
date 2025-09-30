@@ -1,0 +1,1 @@
+successfully extract 208 credentials to /Users/Finn/PycharmProjects/auto_API/test_data/user_credentials.yaml

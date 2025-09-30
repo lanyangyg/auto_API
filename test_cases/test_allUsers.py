@@ -2,8 +2,11 @@ from apis.all_users import AllUsers
 import pytest
 import os
 import yaml
+import allure
 
+@allure.feature("Users Module")
 class TestAllUsers:
+    @allure.story("Get All Users")
     def test_get_all_users(self):
         """
         测试获取所有用户信息
@@ -12,7 +15,7 @@ class TestAllUsers:
         response = all_users.get_all_users()
         assert response.status_code == 200
 
-
+    @allure.story("Extract Credentials to YAML")
     def test_extract_credentials_to_yaml(self):
         """
         测试提取用户凭证并保存到YAML文件

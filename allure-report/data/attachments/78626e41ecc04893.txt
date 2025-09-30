@@ -1,3 +1,0 @@
-successfully extract 208 credentials to /Users/Finn/PycharmProjects/auto_API/test_data/user_credentials.yaml
-
-测试会话结束，认证Token已清除

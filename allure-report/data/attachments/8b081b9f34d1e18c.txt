@@ -1,0 +1,6 @@
+开始获取 208 个用户的token（并发数：20）
+完成! 成功: 208, 失败: 0
+结果已保存到 /Users/Finn/PycharmProjects/auto_API/test_data/users_token.yaml
+成功获取 208 个token
+
+测试会话结束，认证Token已清除
