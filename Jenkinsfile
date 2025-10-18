@@ -8,8 +8,8 @@ pipeline {
     triggers {
         cron('0 8 * * *')   // 定时任务：每天 08:00 跑一次
         GenericTrigger(
-            genericVariables: [[key: 'branch', value: '$.ref']],
-            regexpFilterText: '$branch',
+            genericVariables: [[key: 'ref', value: '$.ref']],
+            regexpFilterText: '$ref',
             regexpFilterExpression: '^refs/heads/main$'
         )    // Push 触发
     }
