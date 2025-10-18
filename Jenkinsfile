@@ -5,6 +5,15 @@ pipeline {
         CI = 'true'
     }
 
+    triggers {
+        cron('0 8 * * *')   // 定时任务：每天 08:00 跑一次
+        GenericTrigger(
+            genericVariables: [[key: 'branch', value: '$.ref']],
+            regexpFilterText: '$branch',
+            regexpFilterExpression: '^refs/heads/main$'
+        )    // Push 触发
+    }
+
     stages {
         stage('Prepare') {
             steps {
