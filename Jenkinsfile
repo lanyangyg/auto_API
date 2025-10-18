@@ -28,17 +28,25 @@ pipeline {
 
     post {
         always {
+            // 生成 Allure 报告
             allure([
                 includeProperties: false,
                 jdk: '',
                 results: [[path: 'allure-results']]
             ])
-            // Email-ext 邮件插件配置
+
+            // 发送邮件
             emailext (
                 subject: "[${currentBuild.result}] ${env.JOB_NAME} #${env.BUILD_NUMBER}",
-                body: '详见附件 Allure 报告',
                 to: 'fnnnfnnfn@126.com',
-                attachLog: true
+                mimeType: 'text/html',
+                body: """
+                <h3>Jenkins 自动发送，请勿回复</h3>
+                <p>构建结果：<b>${currentBuild.result ?: 'SUCCESS'}</b></p>
+                <p>Allure 测试报告：<a href="${BUILD_URL}allure">${BUILD_URL}allure</a></p>
+                <p>构建日志：<a href="${BUILD_URL}console">${BUILD_URL}console</a></p>
+                """,
+                attachLog: true     // 控制台日志作为附件
             )
         }
     }
