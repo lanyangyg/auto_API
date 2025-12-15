@@ -1,0 +1,4 @@
+[32m2025-12-15 05:48:42,424 - INFO - 请求: POST https://dummyjson.com/auth/login[0m
+[32m2025-12-15 05:48:42,424 - INFO - 请求体: {'username': 'emilys', 'password': 'emilyspass'}[0m
+[32m2025-12-15 05:48:42,534 - INFO - 响应: 429 {"message":"request limit exceeded, please wait a few seconds"}[0m
+[31m2025-12-15 05:48:42,534 - ERROR - 请求发生异常: 429 Client Error: Too Many Requests for url: https://dummyjson.com/auth/login[0m

@@ -1,0 +1,1 @@
+successfully extract 208 credentials to /home/runner/work/auto_API/auto_API/test_data/user_credentials.yaml
