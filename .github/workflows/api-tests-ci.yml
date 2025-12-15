@@ -77,9 +77,12 @@ jobs:
         with:
           server_address: smtp.126.com
           server_port: 465
+          
           username: ${{ secrets.MAIL_USERNAME }}
           password: ${{ secrets.MAIL_PASSWORD }}
+          
           subject: "GHA build - ${{ github.repository }} (Build ${{ job.status == 'success' && 'success' || 'fail' }})"
+
           html_body: |
             <h3>自动化测试构建已完成！</h3>
             <p><b>构建状态: ${{ job.status == 'success' && '✅ success' || '❌ fail' }}</b></p>
@@ -87,10 +90,7 @@ jobs:
             <p>触发事件: ${{ github.event_name }}</p>
             <hr>
             <p>
-            ${{ job.status == 'success' && 
-                format('最新的 Allure 测试报告已生成，请点击以下链接查看：<br><a href="https://{0}.github.io/{1}/">https://{0}.github.io/{1}/</a>', github.repository_owner, github.event.repository.name) ||
-                format('构建失败，请点击以下链接查看详细日志：<br><a href="https://github.com/{0}/actions/runs/{1}">点击这里查看构建日志</a>', github.repository, github.run_id)
-            }}
+            ${{ job.status == 'success' && '最新的 Allure 测试报告已生成，请点击以下链接查看：<br><a href="https://lanyangyg.github.io/auto_API/">https://lanyangyg.github.io/auto_API/</a>' || '构建失败，请点击以下链接查看详细日志：<br><a href="https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}">点击这里查看构建日志</a>' }}
             </p>
             <br><br>
             <p><i>此邮件由 GitHub Actions 自动发送。</i></p>
