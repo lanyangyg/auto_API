@@ -1,0 +1,7 @@
+[32m2025-12-15 06:06:43,377 - INFO - 请求: POST https://dummyjson.com/auth/login[0m
+[32m2025-12-15 06:06:43,377 - INFO - 请求体: {'username': 'emilys', 'password': 'emilyspass'}[0m
+[32m2025-12-15 06:06:43,503 - INFO - 响应: 429 {"message":"request limit exceeded, please wait a few seconds"}[0m
+[31m2025-12-15 06:06:43,504 - ERROR - 请求发生异常: 429 Client Error: Too Many Requests for url: https://dummyjson.com/auth/login[0m
+[32m2025-12-15 06:06:45,544 - INFO - 请求: POST https://dummyjson.com/auth/login[0m
+[32m2025-12-15 06:06:45,544 - INFO - 请求体: {'username': 'emilys', 'password': 'emilyspass'}[0m
+[32m2025-12-15 06:06:45,681 - INFO - 响应: 200 {"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NjU[0m

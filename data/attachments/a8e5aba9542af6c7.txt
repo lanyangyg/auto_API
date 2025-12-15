@@ -1,0 +1,5 @@
+开始获取 208 个用户的token（并发数：20）
+完成! 成功: 189, 失败: 19
+失败详情已保存到 /home/runner/work/auto_API/auto_API/test_data/users_token_errors.yaml
+结果已保存到 /home/runner/work/auto_API/auto_API/test_data/users_token.yaml
+成功获取 189 个token
