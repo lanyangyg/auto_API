@@ -1,0 +1,2 @@
+INFO     api_automation_logger:api_client.py:38 请求: GET https://dummyjson.com/users/3
+INFO     api_automation_logger:api_client.py:46 响应: 200 {"id":3,"firstName":"Sophia","lastName":"Brown","maidenName":"","age":43,"gender":"female","email":"sophia.brown@x.dummyjson.com","phone":"+81 210-652-2785","username":"sophiab","password":"sophiabpass","birthDate":"1982-11-6","image":"https://dummyjson.com/icon/sophiab/128","bloodGroup":"O-","heigh
