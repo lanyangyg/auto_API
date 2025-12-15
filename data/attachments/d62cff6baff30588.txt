@@ -1,0 +1,3 @@
+INFO     api_automation_logger:api_client.py:38 请求: POST https://dummyjson.com/carts/add
+INFO     api_automation_logger:api_client.py:40 请求体: {'userId': 2, 'products': [{'id': 2, 'quantity': 3}]}
+INFO     api_automation_logger:api_client.py:46 响应: 201 {"id":51,"products":[{"id":2,"title":"Eyeshadow Palette with Mirror","price":19.99,"quantity":3,"total":59.97,"discountPercentage":18.19,"discountedPrice":49,"thumbnail":"https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/thumbnail.webp"}],"total":59.97,"discountedTotal":4

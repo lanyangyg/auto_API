@@ -1,0 +1,2 @@
+INFO     api_automation_logger:api_client.py:38 请求: GET https://dummyjson.com/carts/user/1
+INFO     api_automation_logger:api_client.py:46 响应: 200 {"carts":[],"total":0,"skip":0,"limit":0}

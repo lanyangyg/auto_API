@@ -1,0 +1,2 @@
+INFO     api_automation_logger:api_client.py:38 请求: DELETE https://dummyjson.com/products/3
+INFO     api_automation_logger:api_client.py:46 响应: 200 {"id":3,"title":"Powder Canister","description":"The Powder Canister is a finely milled setting powder designed to set makeup and control shine. With a lightweight and translucent formula, it provides a smooth and matte finish.","category":"beauty","price":14.99,"discountPercentage":9.84,"rating":4.
